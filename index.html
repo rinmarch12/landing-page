@@ -42,7 +42,7 @@
             right: 0;
             bottom: 0;
             background: url('https://cdn.scalev.id/Image/_80DHjOh15B-7JCgbxr9fvoGNEeow1etLsnhm-ELi7s/1740124810449-headline_LP_scalev.webp') center/cover;
-            opacity: 0.3;
+            opacity: 0.1;
         }
 
         .header-content {
@@ -67,7 +67,7 @@
         /* Hero Images */
         .hero-images {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin: 60px 0;
         }
@@ -87,7 +87,7 @@
 
         .hero-image img {
             width: 100%;
-            max-width: 250px;
+            max-width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 15px;
@@ -125,18 +125,6 @@
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
-        }
-
-        .problem-highlight {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-
-        .problem-highlight img {
-            max-width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .problem-list {
@@ -187,22 +175,6 @@
             margin: 0 auto;
         }
 
-        .solution-visual {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-
-        .solution-visual img {
-            width: 100%;
-            max-width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin: 0 auto;
-        }
-
         .solution-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -250,17 +222,6 @@
             color: #4CAF50;
         }
 
-        .benefits-intro {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .benefits-intro img {
-            max-width: 400px;
-            margin-bottom: 30px;
-            border-radius: 15px;
-        }
-
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -299,75 +260,23 @@
             color: #666;
         }
 
-        /* Process Section */
-        .process-section {
+        /* Product Section */
+        .product-section {
             background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
             color: white;
             padding: 80px 0;
             text-align: center;
         }
 
-        .process-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-        }
-
-        .process-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            margin: 50px 0;
-            flex-wrap: wrap;
-        }
-
-        .process-visual img {
-            max-width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .process-tagline {
-            margin: 30px 0;
-        }
-
-        .process-tagline img {
-            max-width: 400px;
-            border-radius: 15px;
-        }
-
-        /* Product Section */
-        .product-section {
-            background: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .product-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-            color: #4CAF50;
-        }
-
-        .product-showcase {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin: 50px 0;
-        }
-
         .product-image {
-            text-align: center;
+            max-width: 300px;
+            margin: 0 auto 40px;
         }
 
         .product-image img {
             width: 100%;
-            max-width: 300px;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
         .product-features {
@@ -378,31 +287,22 @@
         }
 
         .feature {
-            background: #f8f9fa;
+            background: rgba(255,255,255,0.1);
             padding: 25px;
             border-radius: 15px;
-            border-left: 5px solid #4CAF50;
-            transition: transform 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .feature h3 {
             font-size: 1.2rem;
             margin-bottom: 10px;
-            color: #4CAF50;
-        }
-
-        .feature p {
-            color: #666;
+            color: #fff;
         }
 
         /* Testimonial Section */
         .testimonial-section {
-            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-            color: white;
+            background: white;
             padding: 80px 0;
         }
 
@@ -411,22 +311,21 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 60px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: #4CAF50;
         }
 
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-bottom: 50px;
         }
 
         .testimonial-card {
-            background: rgba(255,255,255,0.1);
+            background: #f8f9fa;
             padding: 30px;
             border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border-left: 5px solid #4CAF50;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
@@ -440,115 +339,6 @@
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 20px;
-        }
-
-        .testimonial-card p {
-            color: #fff;
-            font-size: 1.1rem;
-        }
-
-        .expert-testimony {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .expert-card {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .expert-card img {
-            width: 100%;
-            max-width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        /* Special Promo Section */
-        .promo-section {
-            background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .promo-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-        }
-
-        .promo-showcase {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin: 50px 0;
-        }
-
-        .promo-item {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .promo-item img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .promo-button {
-            margin: 30px 0;
-        }
-
-        .promo-button img {
-            max-width: 400px;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .promo-button img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Quality Section */
-        .quality-section {
-            background: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .quality-icons {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin: 50px 0;
-            flex-wrap: wrap;
-        }
-
-        .quality-icon {
-            text-align: center;
-        }
-
-        .quality-icon img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            margin-bottom: 20px;
-        }
-
-        .quality-icon h3 {
-            color: #4CAF50;
-            font-size: 1.2rem;
         }
 
         /* CTA Section */
@@ -667,15 +457,6 @@
             .product-features {
                 grid-template-columns: 1fr;
             }
-
-            .process-visual {
-                flex-direction: column;
-            }
-
-            .quality-icons {
-                flex-direction: column;
-                gap: 30px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -727,10 +508,6 @@
                 <p><strong>Apa nggak capek kalau semua tenaga habis cuma buat bayar bensin?</strong></p>
             </div>
             
-            <div class="problem-highlight">
-                <img src="https://cdn.scalev.id/Image/sfeKLm-8W4HKyeFU-Xyiisf50OPX1ygZwsxotFeCTfI/1740105354536-images_5739451732158302543.webp" alt="Belum lagi servisnya mahal">
-            </div>
-            
             <div class="problem-list">
                 <div class="problem-item">
                     <h3>🔥 Bensin Makin Mahal</h3>
@@ -762,12 +539,6 @@
                 <p>Ini bukan sulap. Ini solusi.</p>
             </div>
 
-            <div class="solution-visual">
-                <img src="https://cdn.scalev.id/Image/wijkG_a0jrZu4ntCS0HPe_DlPBhraNvnKtyP0PgVCZA/1740106104066-images_3206411710837598710.webp" alt="Duo pengguna">
-                <img src="https://cdn.scalev.id/Image/ETsHqlrVrZCbMi483GPNVxFUsNabaV9Ut58QZsRMgu4/1740106243766-images_6700911731659328824.webp" alt="Pria dengan motor">
-                <img src="https://cdn.scalev.id/Image/JUtBttAUoiW87a5FtXQkrp4Vh50Av4WGh6aq6qt_gzw/save.gif" alt="Animasi mesin">
-            </div>
-
             <div class="solution-steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -793,26 +564,10 @@
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
-        <div class="container">
-            <h2 class="process-title">"Gas Tipis, Anti Krisis"</h2>
-            <div class="process-visual">
-                <img src="https://cdn.scalev.id/Image/d6J120s-MAiouxwubFFk9xShj-AJvDmWrm-jYqFC0Fg/1740105489408-images_8188821710837559593.webp" alt="Pria jempol">
-            </div>
-            <div class="process-tagline">
-                <img src="https://cdn.scalev.id/Image/MjYBC7IGUliElkbaZky37VUhorw2pbHcGVNUkqUxkrc/1740106279429-images_4952631732158101589.webp" alt="Bisnis jadi irit">
-            </div>
-        </div>
-    </section>
-
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="container">
             <h2 class="benefits-title">Kenapa Harus CleanOZ?</h2>
-            <div class="benefits-intro">
-                <img src="https://cdn.scalev.id/Image/MZGHOcb98E9E4mUDGEbmI30LUn8nFqbPhcAfIl_xvMM/1740125254719-icon_benefit.webp" alt="Benefit CleanOZ">
-            </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">⛽</div>
@@ -837,3 +592,113 @@
                 <div class="benefit-card">
                     <div class="benefit-icon">⚡</div>
                     <h3 class="benefit-title">Ngga Perlu Nunggu Lama</h3>
+                    <p class="benefit-description">Hasil bisa langsung dirasakan sejak pemakaian pertama, mesin lebih enteng dan irit BBM.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛢️</div>
+                    <h3 class="benefit-title">Oli Jadi Lebih Awet</h3>
+                    <p class="benefit-description">Oli 2x lipat lebih bersih dan tahan lama karena ruang bakar lebih bersih.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <h2 class="solution-title">CleanOZ - Daily Maintenance Liquid Engine</h2>
+            <div class="product-image">
+                <img src="https://cdn.scalev.id/Image/Rp5bncNEKTSLhA5K_xPNamJBuH7xu4s3sST2R3zxgQg/1740105550114-images_7642981710837559675_1.webp" alt="CleanOZ Product">
+            </div>
+            
+            <div class="product-features">
+                <div class="feature">
+                    <h3>📦 Kemasan Praktis</h3>
+                    <p>Botol 12 ml, 1 kotak isi 4 botol</p>
+                </div>
+                <div class="feature">
+                    <h3>💧 Pemakaian Mudah</h3>
+                    <p>Cukup 3 tetes per liter BBM</p>
+                </div>
+                <div class="feature">
+                    <h3>🚗 Aman Semua Kendaraan</h3>
+                    <p>Motor, mobil, mesin kapal</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Terpercaya</h3>
+                    <p>Sejak 2012, teruji di 137.000+ kendaraan</p>
+                </div>
+                <div class="feature">
+                    <h3>🥇 Bonus Emas 24K</h3>
+                    <p>Setiap pembelian 1 kotak</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="testimonial-title">Sudah Terbukti di 137.000+ Kendaraan</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://cdn.scalev.id/Image/yvVYvCfNskdCJpCCYr7hl_20JVaQc4NsSuwUC7paH6g/1740106471143-images_8242131732162002708.webp" alt="Testimoni Chat" class="testimonial-image">
+                    <p>"Testimoni asli dari pengguna di WhatsApp dan Telegram"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.ytimg.com/vi/VS77po73Ylo/hqdefault.jpg" alt="YouTube Pak Arli" class="testimonial-image">
+                    <p>"Review lengkap dari Pak Arli di YouTube"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.ytimg.com/vi/bemupKqha2M/hqdefault.jpg" alt="Ridwan Hanif" class="testimonial-image">
+                    <p>"Ulasan dari Ridwan Hanif - Pakar Otomotif"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Hidup Memang Berat.<br>Tapi Rakyat Kecil Nggak Boleh Kalah.</h2>
+            <p class="cta-subtitle">CleanOZ bukan cuma cairan irit bensin.<br>CleanOZ adalah gerakan <strong>#AntiKrisis</strong>.</p>
+            <p class="cta-subtitle">Karena setiap tetes CleanOZ,<br>adalah tenaga buat hidup tetap jalan.</p>
+            <a href="#" class="cta-button">KIRIM SAYA CLEANOZ</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">#AntiKrisis</div>
+                <p>CleanOZ bukan sekadar cairan tambahan. CleanOZ adalah solusi merawat kendaraan agar mesin selalu sehat, tarikannya enteng, hemat BBM, dan dompet lebih aman.</p>
+                <p><strong>Terbukti membantu lebih dari 137.000 kendaraan di Indonesia.</strong></p>
+                <p>Bonus emas 24K bikin beli CleanOZ makin untung.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animations
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.benefit-card, .testimonial-card, .step, .problem-item, .hero-image');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('fade-in');
+                }
+            });
+        });
+
+        // CTA Button click handler
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Add your WhatsApp or order link here
+            alert('Hubungi kami untuk pemesanan CleanOZ!');
+        });
+    </script>
+</body>
+</html>
