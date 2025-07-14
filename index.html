@@ -42,7 +42,7 @@
             right: 0;
             bottom: 0;
             background: url('https://cdn.scalev.id/Image/_80DHjOh15B-7JCgbxr9fvoGNEeow1etLsnhm-ELi7s/1740124810449-headline_LP_scalev.webp') center/cover;
-            opacity: 0.1;
+            opacity: 0.15;
         }
 
         .header-content {
@@ -62,6 +62,43 @@
             font-size: 1.5rem;
             margin-bottom: 30px;
             animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        /* Provokatif Opening */
+        .provokatif-section {
+            background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .provokatif-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .provokatif-content {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .provokatif-content p {
+            margin-bottom: 20px;
+        }
+
+        .provokatif-quote {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         /* Hero Images */
@@ -107,39 +144,30 @@
 
         /* Problem Section */
         .problem-section {
-            background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
-            color: white;
+            background: #fff;
             padding: 80px 0;
-            text-align: center;
         }
 
         .problem-title {
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .problem-content {
-            font-size: 1.3rem;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #FF9800;
         }
 
         .problem-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 50px;
         }
 
         .problem-item {
-            background: rgba(255,255,255,0.1);
+            background: linear-gradient(135deg, #fff5f5 0%, #ffebee 100%);
             padding: 30px;
             border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border-left: 5px solid #FF9800;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
@@ -148,9 +176,26 @@
         }
 
         .problem-item h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
-            color: #fff;
+            color: #FF9800;
+        }
+
+        .problem-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .problem-tagline {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #FF9800;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffebee 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #FF9800;
         }
 
         /* Solution Section */
@@ -168,6 +213,13 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
+        .solution-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #FFE0B2;
+        }
+
         .solution-content {
             font-size: 1.4rem;
             line-height: 1.8;
@@ -175,37 +227,34 @@
             margin: 0 auto;
         }
 
-        .solution-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .step {
+        .solution-flow {
             background: rgba(255,255,255,0.1);
             padding: 30px;
             border-radius: 15px;
+            margin: 40px 0;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
-            transition: transform 0.3s ease;
         }
 
-        .step:hover {
-            transform: translateY(-5px);
+        .solution-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
         }
 
-        .step-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #FF9800;
-            margin-bottom: 15px;
+        .solution-benefit {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
-        .step h3 {
-            font-size: 1.2rem;
+        .solution-benefit h4 {
+            font-size: 1.1rem;
             margin-bottom: 10px;
-            color: #fff;
+            color: #FFE0B2;
         }
 
         /* Benefits Section */
@@ -241,10 +290,11 @@
             transform: translateY(-10px);
         }
 
-        .benefit-icon {
-            font-size: 3rem;
+        .benefit-number {
+            font-size: 2rem;
+            font-weight: bold;
             color: #4CAF50;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .benefit-title {
@@ -268,27 +318,46 @@
             text-align: center;
         }
 
+        .product-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
         .product-image {
-            max-width: 300px;
-            margin: 0 auto 40px;
+            text-align: center;
         }
 
         .product-image img {
             width: 100%;
+            max-width: 300px;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
+        .product-info {
+            text-align: left;
+        }
+
         .product-features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
         }
 
         .feature {
             background: rgba(255,255,255,0.1);
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
@@ -298,6 +367,45 @@
             font-size: 1.2rem;
             margin-bottom: 10px;
             color: #fff;
+        }
+
+        .feature p {
+            color: #FFE0B2;
+        }
+
+        .product-guarantee {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .guarantee-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #FFE0B2;
+        }
+
+        .guarantee-list {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .guarantee-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .guarantee-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
         }
 
         /* Testimonial Section */
@@ -322,7 +430,7 @@
 
         .testimonial-card {
             background: #f8f9fa;
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             border-left: 5px solid #4CAF50;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -338,7 +446,59 @@
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Special Promo Section */
+        .promo-section {
+            background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .promo-content {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .promo-title {
+            font-size: 2rem;
+            font-weight: bold;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .promo-bonus {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #FFE0B2;
+        }
+
+        .bonus-image {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: radial-gradient(circle, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.3);
         }
 
         /* CTA Section */
@@ -360,6 +520,13 @@
             font-size: 1.5rem;
             margin-bottom: 40px;
             line-height: 1.6;
+        }
+
+        .cta-movement {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #FFE0B2;
+            margin-bottom: 40px;
         }
 
         .cta-button {
@@ -391,17 +558,24 @@
         }
 
         .footer-content {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
         }
 
         .footer-brand {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #4CAF50;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .footer-quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #FFE0B2;
+            margin: 30px 0;
         }
 
         /* Animations */
@@ -430,7 +604,7 @@
                 font-size: 1.2rem;
             }
             
-            .problem-title,
+            .provokatif-title,
             .solution-title,
             .benefits-title,
             .testimonial-title,
@@ -438,8 +612,13 @@
                 font-size: 2rem;
             }
             
-            .hero-images {
+            .product-grid {
                 grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .product-info {
+                text-align: center;
             }
             
             .benefits-grid {
@@ -447,20 +626,6 @@
             }
             
             .problem-list {
-                grid-template-columns: 1fr;
-            }
-            
-            .solution-steps {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .product-features {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .solution-steps {
                 grid-template-columns: 1fr;
             }
         }
@@ -473,6 +638,22 @@
             <div class="header-content">
                 <h1 class="headline">Boros Bensin Bikin Dompet Tipis?<br>Gas Tipis Pakai CleanOZ!</h1>
                 <p class="subheadline">Tiga Tetes Bukan Cuma Irit, Tapi Bikin Mesin Enteng, Suara Halus, Dan Hemat Biaya Servis!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provokatif Opening -->
+    <section class="provokatif-section">
+        <div class="container">
+            <h2 class="provokatif-title">Pernah Ngerasa Gaji Habis Cuma Buat Isi Bensin?</h2>
+            <div class="provokatif-content">
+                <p>Tarikan motor makin berat. Dompet makin sesak. Hidup rasanya diem di tempat.</p>
+                <p>Padahal setiap hari harus ngerit di jalanan. Cari nafkah. Kirim barang. Jemput anak.</p>
+                <div class="provokatif-quote">
+                    Apa nggak capek kalau semua tenaga habis cuma buat bayar bensin?
+                </div>
+                <p>Rakyat kecil kayak kita nggak boleh kalah sama krisis.</p>
+                <p><strong>Karena hemat BBM itu bukan cuma soal bensin. Tapi soal bisa bertahan hidup.</strong></p>
             </div>
         </div>
     </section>
@@ -501,30 +682,30 @@
     <!-- Problem Section -->
     <section class="problem-section">
         <div class="container">
-            <h2 class="problem-title">Pernah Ngerasa Gaji Habis Cuma Buat Isi Bensin?</h2>
-            <div class="problem-content">
-                <p>Tarikan motor makin berat. Dompet makin sesak. Hidup rasanya diem di tempat.</p>
-                <p>Padahal setiap hari harus ngerit di jalanan. Cari nafkah. Kirim barang. Jemput anak.</p>
-                <p><strong>Apa nggak capek kalau semua tenaga habis cuma buat bayar bensin?</strong></p>
-            </div>
+            <h2 class="problem-title">Masalah Yang Kita Hadapi Setiap Hari</h2>
             
             <div class="problem-list">
                 <div class="problem-item">
                     <h3>🔥 Bensin Makin Mahal</h3>
-                    <p>Kerja nggak bisa berhenti, tapi biaya bensin terus naik</p>
+                    <p>Kerja nggak bisa berhenti, tapi biaya bensin terus naik. Belum lagi servisnya mahal.</p>
                 </div>
                 <div class="problem-item">
                     <h3>⚙️ Mesin Makin Berat</h3>
-                    <p>Tarikan berat, keluar biaya servis makin mahal</p>
+                    <p>Tarikan motor/mobil makin berat, keluar biaya servis makin mahal.</p>
                 </div>
                 <div class="problem-item">
                     <h3>💸 Susah Nabung</h3>
-                    <p>Udah irit-irit, tetap habis cuma buat jalan terus</p>
+                    <p>Udah irit-irit, tetap habis cuma buat jalan terus. Mau nabung, susah.</p>
                 </div>
                 <div class="problem-item">
                     <h3>😰 Capek Terus</h3>
-                    <p>Kerja kayak nggak pernah cukup, dompet tetep tipis</p>
+                    <p>Capek rasanya, kayak kerja nggak pernah cukup. Hidup stuck di tempat.</p>
                 </div>
+            </div>
+
+            <div class="problem-tagline">
+                "Gas Tipis, Anti Krisis."<br>
+                Kalau masih ngandelin cara lama, ya bakal ngerasa capek terus.
             </div>
         </div>
     </section>
@@ -533,32 +714,32 @@
     <section class="solution-section">
         <div class="container">
             <h2 class="solution-title">CleanOZ Hadir Bukan Cuma Buat Irit Bensin</h2>
+            <div class="solution-subtitle">CleanOZ adalah cara rakyat kecil ngelawan krisis.</div>
+            
             <div class="solution-content">
-                <p><strong>CleanOZ adalah cara rakyat kecil ngelawan krisis.</strong></p>
-                <p>Tetesin CleanOZ ke tangki bensin → Mesin bersih → BBM lebih irit → Tarikan enteng → Dompet lebih aman.</p>
+                <div class="solution-flow">
+                    <strong>Tetesin CleanOZ ke tangki bensin → Mesin bersih → BBM lebih irit → Tarikan enteng → Dompet lebih aman.</strong>
+                </div>
                 <p>Ini bukan sulap. Ini solusi.</p>
+                <p>Karena setiap tetes CleanOZ nyimpen tenaga besar buat bikin hidup tetap jalan.</p>
             </div>
 
-            <div class="solution-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Tetes ke Tangki</h3>
-                    <p>Cukup 3 tetes per liter BBM</p>
+            <div class="solution-benefits">
+                <div class="solution-benefit">
+                    <h4>Mesin Enteng</h4>
+                    <p>Nggak boros BBM</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Mesin Bersih</h3>
-                    <p>Membersihkan sisa pembakaran</p>
+                <div class="solution-benefit">
+                    <h4>Suara Mesin Halus</h4>
+                    <p>Nggak sering servis</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>BBM Irit</h3>
-                    <p>Hemat 20-40% bensin</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Dompet Aman</h3>
+                <div class="solution-benefit">
+                    <h4>Bensin Lebih Awet</h4>
                     <p>Sisa uang buat tabungan</p>
+                </div>
+                <div class="solution-benefit">
+                    <h4>Bonus Emas Mini</h4>
+                    <p>Hemat, dapet cuan</p>
                 </div>
             </div>
         </div>
@@ -567,35 +748,35 @@
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="container">
-            <h2 class="benefits-title">Kenapa Harus CleanOZ?</h2>
+            <h2 class="benefits-title">Benefit Utama untuk Pengguna</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">⛽</div>
+                    <div class="benefit-number">1️⃣</div>
                     <h3 class="benefit-title">Bensin Jadi Jauh Lebih Irit</h3>
                     <p class="benefit-description">Penghematan BBM hingga 20-40% (tergantung kondisi kendaraan), cocok untuk kendaraan pribadi, usaha, hingga mesin kapal.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
+                    <div class="benefit-number">2️⃣</div>
                     <h3 class="benefit-title">Tarikan Mesin Enteng & Responsif</h3>
                     <p class="benefit-description">Mesin lebih ringan saat akselerasi, tenaga lebih maksimal, nyaman saat bawa beban berat atau tanjakan.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🔇</div>
+                    <div class="benefit-number">3️⃣</div>
                     <h3 class="benefit-title">Suara Mesin Lebih Halus & Senyap</h3>
                     <p class="benefit-description">Mengurangi suara kasar, bikin mesin lebih halus dan tenang saat dipacu.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🛡️</div>
+                    <div class="benefit-number">4️⃣</div>
                     <h3 class="benefit-title">Mencegah Kerusakan Mesin</h3>
                     <p class="benefit-description">Membersihkan sisa pembakaran dan mencegah kerak karbon yang menempel di piston dan ruang bakar.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
+                    <div class="benefit-number">5️⃣</div>
                     <h3 class="benefit-title">Ngga Perlu Nunggu Lama</h3>
                     <p class="benefit-description">Hasil bisa langsung dirasakan sejak pemakaian pertama, mesin lebih enteng dan irit BBM.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🛢️</div>
+                    <div class="benefit-number">6️⃣</div>
                     <h3 class="benefit-title">Oli Jadi Lebih Awet</h3>
                     <p class="benefit-description">Oli 2x lipat lebih bersih dan tahan lama karena ruang bakar lebih bersih.</p>
                 </div>
@@ -606,32 +787,51 @@
     <!-- Product Section -->
     <section class="product-section">
         <div class="container">
-            <h2 class="solution-title">CleanOZ - Daily Maintenance Liquid Engine</h2>
-            <div class="product-image">
-                <img src="https://cdn.scalev.id/Image/Rp5bncNEKTSLhA5K_xPNamJBuH7xu4s3sST2R3zxgQg/1740105550114-images_7642981710837559675_1.webp" alt="CleanOZ Product">
-            </div>
+            <h2 class="product-title">CleanOZ - Daily Maintenance Liquid Engine</h2>
             
-            <div class="product-features">
-                <div class="feature">
-                    <h3>📦 Kemasan Praktis</h3>
-                    <p>Botol 12 ml, 1 kotak isi 4 botol</p>
+            <div class="product-grid">
+                <div class="product-image">
+                    <img src="https://cdn.scalev.id/Image/Rp5bncNEKTSLhA5K_xPNamJBuH7xu4s3sST2R3zxgQg/1740105550114-images_7642981710837559675_1.webp" alt="CleanOZ Product">
                 </div>
-                <div class="feature">
-                    <h3>💧 Pemakaian Mudah</h3>
-                    <p>Cukup 3 tetes per liter BBM</p>
+                
+                <div class="product-info">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Apa yang Akan Didapatkan?</h3>
+                    <div class="product-features">
+                        <div class="feature">
+                            <h3>📦 Format Produk</h3>
+                            <p>Cairan aditif bahan bakar - Botol 12 ml (bisa dipakai berkali-kali)<br>Kemasan dijual 1 kotak isi 4 botol</p>
+                        </div>
+                        <div class="feature">
+                            <h3>💧 Pemakaian Super Praktis</h3>
+                            <p>Cukup 3 tetes per liter BBM - Tinggal tetes ke tangki bensin</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🚗 Aman Semua Kendaraan</h3>
+                            <p>Bensin, pertamax,
+                        <div class="feature">
+                            <h3>🚗 Aman Semua Kendaraan</h3>
+                            <p>Bensin, pertamax, pertalite, solar - Motor, mobil, mesin kapal</p>
+                        </div>
+                        <div class="feature">
+                            <h3>⚡ Hasil Langsung Terasa</h3>
+                            <p>Sejak pemakaian pertama, mesin lebih enteng dan irit BBM</p>
+                        </div>
+                        <div class="feature">
+                            <h3>📈 Terbukti Sejak 2012</h3>
+                            <p>Sudah dipercaya di lebih dari 137.000 kendaraan</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>🚗 Aman Semua Kendaraan</h3>
-                    <p>Motor, mobil, mesin kapal</p>
-                </div>
-                <div class="feature">
-                    <h3>🏆 Terpercaya</h3>
-                    <p>Sejak 2012, teruji di 137.000+ kendaraan</p>
-                </div>
-                <div class="feature">
-                    <h3>🥇 Bonus Emas 24K</h3>
-                    <p>Setiap pembelian 1 kotak</p>
-                </div>
+            </div>
+
+            <div class="product-guarantee">
+                <h3 class="guarantee-title">Jaminan untuk Pengguna</h3>
+                <ul class="guarantee-list">
+                    <li>Aman digunakan pada semua kendaraan berbahan bakar bensin, pertamax, pertalite, maupun solar</li>
+                    <li>Sudah teruji di lebih dari 137.000 kendaraan dengan berbagai kondisi</li>
+                    <li>Tidak menimbulkan efek samping jika digunakan sesuai petunjuk</li>
+                    <li>Banyak testimoni asli pengguna di media sosial, chat WhatsApp, Telegram, dan video YouTube</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -639,20 +839,45 @@
     <!-- Testimonial Section -->
     <section class="testimonial-section">
         <div class="container">
-            <h2 class="testimonial-title">Sudah Terbukti di 137.000+ Kendaraan</h2>
+            <h2 class="testimonial-title">Testimoni Pengguna CleanOZ</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <img src="https://cdn.scalev.id/Image/yvVYvCfNskdCJpCCYr7hl_20JVaQc4NsSuwUC7paH6g/1740106471143-images_8242131732162002708.webp" alt="Testimoni Chat" class="testimonial-image">
-                    <p>"Testimoni asli dari pengguna di WhatsApp dan Telegram"</p>
+                    <p class="testimonial-text">"Alhamdulillah setelah pakai CleanOZ, motor saya jadi lebih irit dan tarikan enteng banget!"</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="https://i.ytimg.com/vi/VS77po73Ylo/hqdefault.jpg" alt="YouTube Pak Arli" class="testimonial-image">
-                    <p>"Review lengkap dari Pak Arli di YouTube"</p>
+                    <img src="https://cdn.scalev.id/Image/sEtUpeuCGwYjDRYSWOYN4nzW03p7sXTvy6KJUuReRTE/1740106560493-images_5368361732162116127_1.webp" alt="Testimoni Chat 2" class="testimonial-image">
+                    <p class="testimonial-text">"Bisnis ojek online saya jadi lebih untung karena bensin hemat pakai CleanOZ"</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="https://i.ytimg.com/vi/bemupKqha2M/hqdefault.jpg" alt="Ridwan Hanif" class="testimonial-image">
-                    <p>"Ulasan dari Ridwan Hanif - Pakar Otomotif"</p>
+                    <img src="https://cdn.scalev.id/Image/RrNcD8TLCq5Y_KFbNpi7M_PFcMri4MUNGoqFqG--h84/1740106664357-images_9440881732162370426.webp" alt="Testimoni Chat 3" class="testimonial-image">
+                    <p class="testimonial-text">"Sudah 2 tahun pakai CleanOZ, mesin mobil masih halus dan jarang servis"</p>
                 </div>
+                <div class="testimonial-card">
+                    <img src="https://i.ytimg.com/vi/bemupKqha2M/hqdefault.jpg" alt="Testimoni YouTube Ridwan Hanif" class="testimonial-image">
+                    <p class="testimonial-text">"Review mendalam dari Ridwan Hanif tentang efektivitas CleanOZ"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.ytimg.com/vi/vgjzF0JqfoM/hqdefault.jpg" alt="Testimoni YouTube 1" class="testimonial-image">
+                    <p class="testimonial-text">"Testimoni pengguna CleanOZ yang merasakan langsung manfaatnya"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.ytimg.com/vi/BJ172CrlpfE/hqdefault.jpg" alt="Testimoni YouTube 2" class="testimonial-image">
+                    <p class="testimonial-text">"Hasil test drive setelah menggunakan CleanOZ sangat memuaskan"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Promo Section -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-content">
+                <h2 class="promo-title">Promo Spesial!</h2>
+                <div class="bonus-image">🏆</div>
+                <p class="promo-bonus">Bonus Emas 24K Setiap Pembelian 1 Kotak!</p>
+                <p>Hemat BBM + Dapat Cuan = Double Untung!</p>
+                <img src="https://cdn.scalev.id/Image/eMITD5lVVjei4y2QcFcPT7ahFvyk7t55HpPv94fx_qA/1740108102829-images_7016781731659141551.webp" alt="Bonus Emas BlessGold" style="width: 150px; margin: 20px auto; display: block; border-radius: 10px;">
             </div>
         </div>
     </section>
@@ -660,44 +885,52 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2 class="cta-title">Hidup Memang Berat.<br>Tapi Rakyat Kecil Nggak Boleh Kalah.</h2>
-            <p class="cta-subtitle">CleanOZ bukan cuma cairan irit bensin.<br>CleanOZ adalah gerakan <strong>#AntiKrisis</strong>.</p>
-            <p class="cta-subtitle">Karena setiap tetes CleanOZ,<br>adalah tenaga buat hidup tetap jalan.</p>
+            <h2 class="cta-title">Jangan Biarkan Krisis Mengalahkan Impian!</h2>
+            <p class="cta-subtitle">Setiap hari yang kamu tunda, adalah uang yang keluar sia-sia untuk bensin.<br>Saatnya ambil langkah. Saatnya #AntiKrisis.</p>
+            <div class="cta-movement">CleanOZ adalah gerakan #AntiKrisis</div>
             <a href="#" class="cta-button">KIRIM SAYA CLEANOZ</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <section class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">#AntiKrisis</div>
-                <p>CleanOZ bukan sekadar cairan tambahan. CleanOZ adalah solusi merawat kendaraan agar mesin selalu sehat, tarikannya enteng, hemat BBM, dan dompet lebih aman.</p>
-                <p><strong>Terbukti membantu lebih dari 137.000 kendaraan di Indonesia.</strong></p>
-                <p>Bonus emas 24K bikin beli CleanOZ makin untung.</p>
+                <div class="footer-brand">CleanOZ</div>
+                <p>Hidup memang berat.<br>Tapi rakyat kecil nggak boleh kalah.</p>
+                <div class="footer-quote">
+                    "CleanOZ bukan cuma cairan irit bensin.<br>CleanOZ adalah gerakan #AntiKrisis."
+                </div>
+                <p>Karena setiap tetes CleanOZ,<br>adalah tenaga buat hidup tetap jalan.</p>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script>
         // Simple scroll animations
-        window.addEventListener('scroll', function() {
-            const elements = document.querySelectorAll('.benefit-card, .testimonial-card, .step, .problem-item, .hero-image');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('fade-in');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
                 }
             });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.problem-item, .benefit-card, .testimonial-card, .hero-image').forEach(el => {
+            observer.observe(el);
         });
 
-        // CTA Button click handler
+        // Smooth scrolling for CTA button
         document.querySelector('.cta-button').addEventListener('click', function(e) {
             e.preventDefault();
-            // Add your WhatsApp or order link here
-            alert('Hubungi kami untuk pemesanan CleanOZ!');
+            // Here you would typically integrate with your ordering system
+            alert('Terima kasih! Anda akan diarahkan ke sistem pemesanan.');
         });
     </script>
 </body>
